@@ -1,0 +1,25 @@
+{
+  "entities": {
+    "Task": {
+      "title": "Task",
+      "description": "A task item in the dashboard",
+      "type": "object",
+      "properties": {
+        "title": { "type": "string", "description": "The name of the task" },
+        "status": { "type": "string", "enum": ["todo", "in-progress", "completed"], "description": "Current state of the task" },
+        "priority": { "type": "string", "enum": ["low", "medium", "high"], "description": "Importance level" },
+        "dueDate": { "type": "string", "format": "date-time", "description": "When it's due" },
+        "userId": { "type": "string", "description": "Owner of the task" },
+        "createdAt": { "type": "string", "format": "date-time" },
+        "updatedAt": { "type": "string", "format": "date-time" }
+      },
+      "required": ["title", "status", "userId", "createdAt", "updatedAt"]
+    }
+  },
+  "firestore": {
+    "tasks/{taskId}": {
+      "schema": "Task",
+      "description": "Collection of user tasks"
+    }
+  }
+}

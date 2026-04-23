@@ -1,0 +1,6 @@
+{
+  "name": "SyncBoard",
+  "description": "A high-performance personal dashboard with real-time CRUD and secure Firebase authentication.",
+  "requestFramePermissions": [],
+  "majorCapabilities": []
+}
