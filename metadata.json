@@ -1,6 +1,6 @@
 {
   "name": "SyncBoard",
-  "description": "A high-performance personal dashboard with real-time CRUD and secure Firebase authentication.",
+  "description": "A refined personal dashboard showcase featuring secure Google authentication, real-time Firestore synchronization, and responsive design for high-level project management.",
   "requestFramePermissions": [],
   "majorCapabilities": []
 }
